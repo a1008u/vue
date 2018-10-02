@@ -19,6 +19,14 @@
     <h3>capter3_2</h3>
     <c3_2/>
 
+    <h3>capter4_1</h3>
+    <c4_1/>
+
+    <h3>capter4_2</h3>
+    <c4_2/>
+
+    <h3>capter5_1</h3>
+    <c5_1/>
     
   </div>
 </template>
@@ -30,6 +38,9 @@ import c2_1 from "./components/chapter2_1";
 import c2_2 from "./components/chapter2_2";
 import c3_1 from "./components/chapter3_1";
 import c3_2 from "./components/chapter3_2";
+import c4_1 from "./components/chapter4_1";
+import c4_2 from "./components/chapter4_2";
+import c5_1 from "./components/chapter5_1";
 
 export default {
   name: "App",
@@ -40,6 +51,9 @@ export default {
     ,c2_2
     ,c3_1
     ,c3_2
+    ,c4_1
+    ,c4_2
+    ,c5_1
   }
 };
 </script>
