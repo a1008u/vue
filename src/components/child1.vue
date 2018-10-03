@@ -10,19 +10,19 @@
 
 <script>
   export default {
-    data: function() {
+    data() {
       return {
         text: '',
         choice: [],
       }
     },
-    updated: function() {
+    updated() {
       this.$emit('input', {
         choice: this.choice,
         text: this.text,
       })
     },
-    mounted: function() {
+    mounted() {
       this.choice = this.value.choice
       this.text   = this.value.text
     },

@@ -2,7 +2,8 @@
   <div class="parent">
     <h1>親コンポーネント</h1>
     {{ data }}
-    <child v-model="data"/>
+    <child1 v-model="data"/>
+        <hr />
   </div>
 </template>
 
@@ -12,13 +13,12 @@
       return {
         data: {
           choice: ['A', 'B'],
-          text: '初期値',
-          message: 'Hello Vue!!'
+          text: '初期値'
         }
       }
     },
     components: {
-      child: require('./child')
+      child1: require('./child1')
     }
   }
 </script>

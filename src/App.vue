@@ -19,15 +19,33 @@
     <h3>capter3_2</h3>
     <c3_2/>
 
+    <h2>capter4</h2>
     <h3>capter4_1</h3>
     <c4_1/>
 
     <h3>capter4_2</h3>
     <c4_2/>
 
+    <h2>capter5</h2>
     <h3>capter5_1</h3>
     <c5_1/>
-    
+
+    <h3>capter5_2</h3>
+    <c5_2/>
+
+    <h3>capter5_3</h3>
+    <c5_3/>
+
+    <h3>capter5_4</h3>
+    <c5_4/>
+
+    <h3>capter5_5</h3>
+    <c5_5/>
+
+    <h2>capter6</h2>
+    <h3>capter6_1</h3>
+    <c6_1/>
+
   </div>
 </template>
 
@@ -41,6 +59,11 @@ import c3_2 from "./components/chapter3_2";
 import c4_1 from "./components/chapter4_1";
 import c4_2 from "./components/chapter4_2";
 import c5_1 from "./components/chapter5_1";
+import c5_2 from "./components/chapter5_2";
+import c5_3 from "./components/chapter5_3";
+import c5_4 from "./components/chapter5_4";
+import c5_5 from "./components/chapter5_5";
+import c6_1 from "./components/chapter6_1";
 
 export default {
   name: "App",
@@ -54,6 +77,11 @@ export default {
     ,c4_1
     ,c4_2
     ,c5_1
+    ,c5_2
+    ,c5_3
+    ,c5_4
+    ,c5_5
+    ,c6_1
   }
 };
 </script>
