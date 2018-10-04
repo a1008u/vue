@@ -46,6 +46,31 @@
     <h3>capter6_1</h3>
     <c6_1/>
 
+    <h3>capter6_２</h3>
+    <c6_2/>
+
+    <h3>capter6_3</h3>
+    <c6_3/>
+
+    <h3>capter6_4</h3>
+    <c6_4/>
+
+    <h3>capter6_5</h3>
+    <c6_5/>
+
+    <h3>capter6_6</h3>
+    <c6_6/>
+
+    <h3>capter6_7</h3>
+    <c6_7/>
+
+    <h3>capter6_8</h3>
+    <c6_8/>
+
+    <h2>capter8</h2>
+    <h3>capter8_1</h3>
+    <c8_1/>
+
   </div>
 </template>
 
@@ -64,6 +89,15 @@ import c5_3 from "./components/chapter5_3";
 import c5_4 from "./components/chapter5_4";
 import c5_5 from "./components/chapter5_5";
 import c6_1 from "./components/chapter6_1";
+import c6_2 from "./components/chapter6_2";
+import c6_3 from "./components/chapter6_3";
+import c6_4 from "./components/chapter6_4";
+import c6_5 from "./components/chapter6_5";
+import c6_6 from "./components/chapter6_6";
+import c6_7 from "./components/chapter6_7";
+import c6_8 from "./components/chapter6_8";
+import c8_1 from "./components/chapter8_1";
+
 
 export default {
   name: "App",
@@ -82,6 +116,14 @@ export default {
     ,c5_4
     ,c5_5
     ,c6_1
+    ,c6_2
+    ,c6_3
+    ,c6_4
+    ,c6_5
+    ,c6_6
+    ,c6_7
+    ,c6_8
+    ,c8_1
   }
 };
 </script>
