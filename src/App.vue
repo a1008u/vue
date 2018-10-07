@@ -71,6 +71,9 @@
     <h3>capter8_1</h3>
     <c8_1/>
 
+    <h3>capter8_2</h3>
+    <c8_2/>
+
   </div>
 </template>
 
@@ -97,6 +100,7 @@ import c6_6 from "./components/chapter6_6";
 import c6_7 from "./components/chapter6_7";
 import c6_8 from "./components/chapter6_8";
 import c8_1 from "./components/chapter8_1";
+import c8_2 from "./components/chapter8_2";
 
 
 export default {
@@ -124,6 +128,7 @@ export default {
     ,c6_7
     ,c6_8
     ,c8_1
+    ,c8_2
   }
 };
 </script>
