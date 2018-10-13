@@ -71,7 +71,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .tuyoi {
   background: #ffeaea;
 }

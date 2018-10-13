@@ -2,12 +2,12 @@
   <div>
     <hr />
     <ol>
-      <li v-for="item in list">{{ item }}</li>
+      <li class='text-left' v-for="item in list" v-bind:key="item.id">{{ item }}</li>
     </ol>
 
     <hr />
-    <button type="button" v-on:click="handleClick">Click</button>
-    <button type="button" @click="handleClick">Clickと同じ</button>
+    <button type="button" class='button-right' v-on:click="handleClick">Click(v-onでのclick)</button>
+    <button type="button" @click="handleClick">Click(@clickでのclick))</button>
 
     <hr />
     <input v-model="message">
@@ -44,7 +44,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .v-enter-active, .v-leave-active {
   transition: opacity 1s;
 }
@@ -52,4 +52,34 @@ export default {
 .v-enter, .v-leave-to {
   opacity: 0;
 }
+
+.text-left{
+  text-align: left;
+}
+
+button {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+button:hover {
+    background: #67c5ff;
+    color: white;
+}
+
+.button-right {
+  margin-right: 30px
+}
+
+/* フォーカス時の枠を消す */
+a {
+outline: none;
+}
+a:focus, *:focus { outline:none; }
+
 </style>
