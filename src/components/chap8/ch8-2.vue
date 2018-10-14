@@ -1,15 +1,13 @@
 <template>
-  <div class="app8">
+  <div>
     <h1>{{ message }}</h1>
     <EditForm/>
   </div>
 </template>
 <script>
-import store from './store'
-// 子コンポーネントを読み込む
+import store from '@/store'
 import EditForm from './EditForm'
 export default {
-  name: 'app8',
   components: {
     EditForm
   },
