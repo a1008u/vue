@@ -26,7 +26,7 @@ export default Vue.extend({
     /** 親コンポーネントのonUpdate呼び出し */
     handleClick() {
       if (this.$listeners["onUpdate"]) {
-        this.$emit("onUpdate", this.updateData)
+        this.$emit("onUpdate", this.updateData++)
       } else {
         console.log("呼び出し側でonUpdateが実装されていません")
         debugger

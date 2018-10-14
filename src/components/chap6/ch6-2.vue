@@ -5,6 +5,7 @@
         トランジションさせたい要素です
       </div>
     </transition>
+    
     <p><button v-on:click="show2=!show2">切り替え</button></p>
     <hr />
   </div>

@@ -10,10 +10,10 @@
  
 <script>
 import Vue from "vue"
-import ChildComponent from "./child5.vue"
+import childComponent from "./child5.vue"
 export default Vue.extend({
   components: {
-    ChildComponent,
+    childComponent,
   },
   data() {
     return {

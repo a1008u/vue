@@ -35,7 +35,7 @@ export default Vue.extend({
     doRemove(index) {
       this.list.splice(index, 1)
     },
-      beforeLeave: function (el) {
+    beforeLeave: function (el) {
       var style = window.getComputedStyle(el)
       el.style.left = el.offsetLeft - parseFloat(style.marginLeft, 10) + 'px'
       el.style.top = el.offsetTop - parseFloat(style.marginTop, 10) + 'px'

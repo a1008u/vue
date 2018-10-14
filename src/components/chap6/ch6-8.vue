@@ -4,7 +4,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
       <!-- SVGのパーツにトランジションを適用 -->
       <transition>
-        <my-circle v-bind:fill="fill" v-bind:key="fill"></my-circle>
+        <ch681 v-bind:fill="fill" v-bind:key="fill"></ch681>
       </transition>
     </svg>
   </div>
@@ -14,15 +14,12 @@
 <script>
 import Vue from "vue"
 import _ from "lodash"
-
-Vue.component('my-circle', {
-  template: '<circle cx="80" cy="75" r="50" v-bind:fill="fill"/>',
-  props: {
-    fill: String
-  }
-})
+import ch681 from "./ch6-8-1"
 
 export default Vue.extend({
+  components: {
+    ch681
+  },
   data() {
     return {
       toggle: false

@@ -20,7 +20,12 @@ export default Vue.extend({
 })
 </script>
 
-<style>
+<style scoped>
+
+div {
+  text-align: left
+}
+
 .v-enter-active, .v-leave-active {
   transition: opacity 1s;
 }
