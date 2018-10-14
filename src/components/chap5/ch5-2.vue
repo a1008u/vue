@@ -1,15 +1,15 @@
 <template>
     <div>
-        <child2 message2="Hello Vue!!"></child2>
-            <hr />
+      <child2 message2="Hello Vue!!"></child2>
+      <hr />
     </div>
 </template>
 
 <script>
-import Child2 from './child2.vue';
+import child2 from './child2.vue';
 export default {
     components: {
-        Child2
+        child2
     }
 }
 </script>

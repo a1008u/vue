@@ -1,19 +1,20 @@
 <template>
     <div>
-        <child4 @:panretMessage="messageLog"></child4>
-        <hr />
+      <child4 v-on:childs-event="parentsMethod"></child4>
+      <hr />
     </div>
 </template>
+
 <script>
-import Child4 from './child4.vue';
+import child4 from './child4.vue';
 export default {
     components: {
-        Child4
+      child4
     },
     methods: {
-        messageLog() {
-            console.log("parent");
-        }
+      parentsMethod: function () {
+        alert('イベントをキャッチ！ ')
+      }
     }
 }
 </script>

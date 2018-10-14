@@ -15,7 +15,7 @@ import HelloWorld from "./components/HelloWorld";
 export default {
   name: "App",
   components: {
-    HelloWorld
+    HelloWorld,
   }
 };
 </script>
@@ -29,4 +29,11 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+/* フォーカス時の枠を消す */
+a {
+outline: none;
+}
+a:focus, *:focus { outline:none; }
+
 </style>

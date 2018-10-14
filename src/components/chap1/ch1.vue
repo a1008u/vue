@@ -57,6 +57,7 @@ export default {
   text-align: left;
 }
 
+/* buttonデコ */
 button {
     display: inline-block;
     padding: 0.3em 1em;
@@ -75,11 +76,5 @@ button:hover {
 .button-right {
   margin-right: 30px
 }
-
-/* フォーカス時の枠を消す */
-a {
-outline: none;
-}
-a:focus, *:focus { outline:none; }
 
 </style>

@@ -3,7 +3,7 @@
     <hr />
     名前
     <input v-model="name">
-    <button @click="doAdd">モンスターを追加</button>
+    <button @click="doAdd" class='button-left'>モンスターを追加</button>
 
     <ul>
       <li v-for="(item, index) in list"
@@ -13,13 +13,14 @@
         ID.{{ item.id }} {{ item.name }} HP.{{ item.hp }}
         <span v-if="item.hp < 50">瀕死！</span>
         <span v-if="item.hp > 300">つよい！</span>
-        <button v-on:click="doAttack(index)">攻撃する</button>
-        <button @click="doRemove(index)">モンスターを削除</button>
+        <button v-on:click="doAttack(index)"  class='button-left'>攻撃する</button>
+        <button @click="doRemove(index)"  class='button-left'>モンスターを削除</button>
       </li>
     </ul>
 
     <button @click="handleClick">カウントアップ</button>
-    <button @click="show=!show">表示/非表示</button>
+    <button @click="show=!show" class='button-left'>表示/非表示</button>
+    <br />
     <span ref="count" v-if="show">0</span>
 
     <div id="ch2_2" v-cloak>
@@ -86,6 +87,31 @@ export default {
 }
 #ch2_2[v-cloak] {
   opacity: 0;
+}
+
+/* buttonデコ */
+
+button {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px #67c5ff;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+button:hover {
+    background: #67c5ff;
+    color: white;
+}
+
+.button-right {
+  margin-right: 30px
+}
+
+.button-left {
+  margin-left: 30px
 }
 
 </style>

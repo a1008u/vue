@@ -6,74 +6,33 @@
   <router-link to="/ch1">ch1</router-link>
   <br>
 
-  <router-link to="/ch2-1">ch2-1</router-link>
-  <br>
-
-  <router-link to="/ch2-2">ch2-2</router-link>
-  <br>
-
-  <router-link to="/ch3-1">ch3-1</router-link>
-  <br>
-
-  <router-link to="/ch3-2">ch3-2</router-link>
-  <br>
-
-  <router-link to="/ch4-1">ch4-1</router-link>
-  <br>
-
-  <router-link to="/ch4-2">ch4-2</router-link>
-  <br>
-
-  <router-link to="/ch5-1">ch5-1</router-link>
-  <br>
-
-  <router-link to="/ch5-2">ch5-2</router-link>
-  <br>
-
-  <router-link to="/ch5-3">ch5-3</router-link>
-  <br>
-
-  <router-link to="/ch5-4">ch5-4</router-link>
-  <br>
-
-  <router-link to="/ch5-5">ch5-5</router-link>
-  <br>
-
-  <router-link to="/ch6-1">ch6-1</router-link>
-  <br>
-
-  <router-link to="/ch6-2">ch6-2</router-link>
-  <br>
-
-  <router-link to="/ch6-3">ch6-3</router-link>
-  <br>
-
-  <router-link to="/ch6-4">ch6-4</router-link>
-  <br>
-
-  <router-link to="/ch6-5">ch6-5</router-link>
-  <br>
-
-  <router-link to="/ch6-6">ch6-6</router-link>
-  <br>
-
-  <router-link to="/ch6-7">ch6-7</router-link>
-  <br>
-
-  <router-link to="/ch6-8">ch6-8</router-link>
-  <br>
-
-  <router-link to="/ch8-1">ch8-1</router-link>
-  <br>
-
-  <router-link to="/ch8-2">ch8-2</router-link>
-  <br>
+  <ch2/>
+  <ch3/>
+  <ch4/>
+  <ch5/>
+  <ch6/>
+  <ch8/>
 
 </div>
 </template>
 
 <script>
+import ch2 from "../components/chap2/ch2";
+import ch3 from "../components/chap3/ch3";
+import ch4 from "../components/chap4/ch4";
+import ch5 from "../components/chap5/ch5";
+import ch6 from "../components/chap6/ch6";
+import ch8 from "../components/chap8/ch8";
+
 export default {
-  name: "use"
+  name: "use",
+  components: {
+    ch2,
+    ch3,
+    ch4,
+    ch5,
+    ch6,
+    ch8
+  }
 };
 </script>

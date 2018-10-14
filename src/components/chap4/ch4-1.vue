@@ -6,8 +6,13 @@
     <p>X: {{ halfPoint.x }}</p>
     <p>Y: {{ halfPoint.y }}</p>
 
+    <h3>width</h3>
     <input v-model.number="width"> {{ width }}
     <input v-model.number="halfWidth2"> {{ halfWidth2 }}
+
+    <h3>Height</h3>
+    <input v-model.number="height"> {{ height }}
+    <input v-model.number="halfHeight"> {{ halfHeight }}
 
     <p>算出プロパティ</p>
     <ol>
@@ -29,7 +34,8 @@
 export default {
   data () {
     return {
-      width: 800
+      width: 800, 
+      height: 800
     }
   },
   computed: {
@@ -62,4 +68,8 @@ export default {
 </script>
 
 <style scoped>
+p, 
+li{
+  text-align: left;
+}
 </style>

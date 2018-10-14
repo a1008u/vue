@@ -1,11 +1,15 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import home from "./components/home/home";
+
 import ch1 from "./components/chap1/ch1";
+
 import ch2_1 from "./components/chap2/ch2-1";
 import ch2_2 from "./components/chap2/ch2-2";
+
 import ch3_1 from "./components/chap3/ch3-1";
 import ch3_2 from "./components/chap3/ch3-2";
+
 import ch4_1 from "./components/chap4/ch4-1";
 import ch4_2 from "./components/chap4/ch4-2";
 
@@ -151,11 +155,6 @@ const routes = [
     name: "chap8-2",
     component: ch8_2
   }
-  // {
-  //   path: "/terms",
-  //   name: "terms",
-  //   component: Terms
-  // }
 ];
 
 export default new VueRouter({
